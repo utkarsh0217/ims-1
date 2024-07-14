@@ -6,7 +6,7 @@ public with sharing class AccountControllernew {
         return [SELECT Id, Name, Description FROM Account];
     }
 
-    // Method to update an account ====---
+    // Method to update an account ====---++++
     @AuraEnabled
     public static void updateAccount(Id recordId, String newName, String newDescription) {
         Account recordToUpdate = new Account(
