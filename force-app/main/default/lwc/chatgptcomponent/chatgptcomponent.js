@@ -28,7 +28,7 @@ export default class chatgptcomponent extends LightningElement {
     {
         const endPoint="https://api.openai.com/v1/chat/completions";
         const myHeaders=new Headers();
-        myHeaders.append("Authorization","Bearer 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");
+       // myHeaders.append("Authorization","Bearer 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");
         myHeaders.append("Content-type","application/json");
 
         console.log(this.question);
