@@ -1,0 +1,8 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello this is parent component" icon-name="standard:account">
+
+        <lightning-input class="slds-p-around_medium" type="text" variant="standard" name="name" label="input to child" placeholder="type here..." onchange={handlechange} ></lightning-input>
+       <c-child-practice-component full-name={newName}></c-child-practice-component>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Photo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( Image_URL__c ) &amp;&amp;   ISPICKVAL( Gender__c , &apos;Male&apos;) , IMAGE(&apos;/resource/1666257081000/maledefault?&apos;,&apos;problem in loading &apos;,100,100),
+IF( ISBLANK( Image_URL__c ) &amp;&amp;   ISPICKVAL( Gender__c , &apos;FeMale&apos;) , IMAGE(&apos;/resource/1666257263000/female?&apos;,&apos;problem in loading &apos;,100,100),
+IF( ISBLANK( Image_URL__c ) &amp;&amp;   ISPICKVAL( Gender__c , &apos;Other&apos;) , IMAGE(&apos;/resource/1666257329000/others?&apos;, &apos;problem in loading &apos;,100,100),
+ IMAGE( Image_URL__c ,&apos;problem in loading &apos;,100, 100))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Student Photo</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

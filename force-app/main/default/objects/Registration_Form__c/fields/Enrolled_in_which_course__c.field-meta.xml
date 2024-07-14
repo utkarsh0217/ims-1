@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enrolled_in_which_course__c</fullName>
+    <label>Enrolled in which course</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Python</fullName>
+                <default>false</default>
+                <label>Python</label>
+            </value>
+            <value>
+                <fullName>Java</fullName>
+                <default>false</default>
+                <label>Java</label>
+            </value>
+            <value>
+                <fullName>React</fullName>
+                <default>false</default>
+                <label>React</label>
+            </value>
+            <value>
+                <fullName>DS + ML</fullName>
+                <default>false</default>
+                <label>DS + ML</label>
+            </value>
+            <value>
+                <fullName>Full Stack</fullName>
+                <default>false</default>
+                <label>Full Stack</label>
+            </value>
+            <value>
+                <fullName>Web Designing</fullName>
+                <default>false</default>
+                <label>Web Designing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

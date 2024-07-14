@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>result__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(MOD(enter_the_year__c ,400) == 0 &amp;&amp;  MOD( enter_the_year__c ,4) == 0,MOD( enter_the_year__c ,100) == 0) , &quot;it is leap year&quot;, &quot;it is not leap year&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>result</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

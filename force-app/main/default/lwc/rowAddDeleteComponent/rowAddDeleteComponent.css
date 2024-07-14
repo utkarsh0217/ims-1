@@ -1,0 +1,7 @@
+.slds-m-top_medium{
+    margin-top: 1rem;
+}
+
+.slds-gutters>div{
+    flex:1;
+}

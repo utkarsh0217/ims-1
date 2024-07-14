@@ -1,0 +1,18 @@
+<apex:page showHeader="false" sidebar="false">
+    <apex:includeLightning />    
+    <div id="divid">
+          
+    </div>    
+    <script>
+    $Lightning.use("c:appforvfpage", function() {
+        $Lightning.createComponent("c:datatableforvfpage",
+          { 
+          },
+          "divid",
+          function(cmp) {
+             console.log('LWC Componenet added in VF page');
+             
+          });
+    });
+    </script>
+</apex:page>

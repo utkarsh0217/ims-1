@@ -1,0 +1,23 @@
+<template>
+<lightning-card  variant="Narrow"  title="Parent Component" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Name" onchange={handleName} value={Name}></lightning-input>
+            </div>
+             <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="City" onchange={handleCity} value={City}></lightning-input>
+            </div>
+            <!-- call child method -->
+            <div class="slds-p-around_medium lgc-bg" style="text-align: end;">
+                <lightning-button variant="brand" label="Call Child" title="Call Child" onclick={callChildMethod} class="slds-m-left_x-small"></lightning-button>
+            </div>    
+        </div>
+    </lightning-card> 
+
+   <template if:true={callchild}>
+       <c-child-component3></c-child-component3>
+   </template>
+ 
+    
+   
+</template>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>board_class__c</fullName>
+    <label>board class</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Secondary school examination</fullName>
+                <default>false</default>
+                <label>Secondary school examination</label>
+            </value>
+            <value>
+                <fullName>senior secondary school examination</fullName>
+                <default>false</default>
+                <label>senior secondary school examination</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

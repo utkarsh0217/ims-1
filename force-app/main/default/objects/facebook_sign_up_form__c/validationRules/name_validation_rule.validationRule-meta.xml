@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>name_validation_rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(OR((REGEX(  first_name__c ,&quot;[a-zA-Z]+&quot;)), ISBLANK( first_name__c  ) ))</errorConditionFormula>
+    <errorDisplayField>first_name__c</errorDisplayField>
+    <errorMessage>numbers and blank fields are not allowed</errorMessage>
+</ValidationRule>

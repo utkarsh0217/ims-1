@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>second_installment_paid_amount</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(X2nd_installment_paid_amount__c  &gt;  X2nd_installment_due_amount__c, X2nd_installment_paid_amount__c &lt;=0)</errorConditionFormula>
+    <errorDisplayField>X2nd_installment_paid_amount__c</errorDisplayField>
+    <errorMessage>2nd installment cannot be greater than due amount</errorMessage>
+</ValidationRule>

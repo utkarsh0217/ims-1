@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>first_install_one_time_pay_rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Total_Fees__c  &lt;&gt; X1st_installment_paid_amount__c, NOT(ISPICKVAL( Mode_Of_Payment__c ,&apos;Installments&apos;)))</errorConditionFormula>
+    <errorDisplayField>X1st_installment_paid_amount__c</errorDisplayField>
+    <errorMessage>For one time payment , amount paid must equal to total fees</errorMessage>
+</ValidationRule>

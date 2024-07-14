@@ -1,0 +1,33 @@
+<!-- crudDataTable.html -->
+<template>
+    <lightning-card title="Account CRUD Operations">
+        <template if:true={accList}>
+            <lightning-datatable
+                key-field="Id"
+                data={accList}
+                columns={columns}
+                onrowaction={handleRowAction}
+            >
+            </lightning-datatable>
+        </template>
+        <template if:true={error}>
+            <p>{error}</p>
+        </template>
+        <lightning-record-edit-form
+            object-api-name="Account"
+            onsubmit={handleCreateRecord}
+            onsuccess={handleSuccess}
+            onerror={handleError}
+        >
+            <lightning-input-field field-name="Name" required></lightning-input-field>
+            <lightning-input-field field-name="Type"></lightning-input-field>
+            <lightning-input-field field-name="Industry"></lightning-input-field>
+            <lightning-input-field field-name="AnnualRevenue" type="currency"></lightning-input-field>
+            <lightning-input-field field-name="Phone" type="tel"></lightning-input-field>
+            <lightning-input-field field-name="Website" type="url"></lightning-input-field>
+            <div class="slds-m-top_small">
+                <lightning-button variant="brand" type="submit" label="Create Account"></lightning-button>
+            </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

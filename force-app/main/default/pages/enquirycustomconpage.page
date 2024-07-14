@@ -1,0 +1,27 @@
+<apex:page controller="firstcontroller">
+    <apex:form >
+            <apex:pageBlock title="enquiry view page">
+         
+        <apex:pageBlockSection title="information" collapsible="true" columns="2">
+            
+            <apex:inputText value="{!fname}" label="first name"/> 
+            <apex:inputText value="{!pname}" label="parents name"/>
+            <apex:inputText value="{!email}" label="email of student"/>
+           
+        
+        </apex:pageBlockSection>
+        
+       
+            
+        
+       
+      <apex:pageBlockButtons location="bottom">
+          <apex:commandButton action="{!saverecord}" value="save the record"/>
+        </apex:pageBlockButtons>
+    
+        
+        </apex:pageBlock>
+        
+    
+    </apex:form>
+</apex:page>

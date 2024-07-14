@@ -1,0 +1,11 @@
+<apex:page Controller="CustomController" sidebar="false" >
+   <apex:form >
+        <apex:pageBlock title="Congratulations {!$User.FirstName}">
+            <apex:outputLabel value="account name daalo"/>
+            <apex:inputField value="{!account.name}"/>
+            <apex:commandButton action="{!save}" value="save"/>
+            <apex:commandButton action="{!deleteacc}" value="delete"/>
+        </apex:pageBlock>
+    </apex:form>
+        
+</apex:page>

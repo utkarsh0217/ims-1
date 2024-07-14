@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Mark Sheet">
+        <lightning-input label="Physics" type="number" min="0" max="100" value={physicsMarks} onchange={handleMarksChange}></lightning-input>
+        <lightning-input label="Chemistry" type="number" min="0" max="100" value={chemistryMarks} onchange={handleMarksChange}></lightning-input>
+        <lightning-input label="Maths" type="number" min="0" max="100" value={mathsMarks} onchange={handleMarksChange}></lightning-input>
+        <lightning-input label="English" type="number" min="0" max="100" value={englishMarks} onchange={handleMarksChange}></lightning-input>
+        <lightning-input label="Hindi" type="number" min="0" max="100" value={hindiMarks} onchange={handleMarksChange}></lightning-input>
+        <lightning-button label="Calculate Result" onclick={calculateResult}></lightning-button>
+        <lightning-button label="calculate percentage" onclick={calculatepercentage}></lightning-button>
+        <div>
+            <p>{result}</p>
+        </div>
+        <div>
+            <p>{percentage}</p>
+        </div>
+        
+    </lightning-card>
+</template>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>third_installment_rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>X3rd_installment_paid_amount__c  &lt;&gt;  X3rd_installment_due_amount__c</errorConditionFormula>
+    <errorDisplayField>X3rd_installment_paid_amount__c</errorDisplayField>
+    <errorMessage>3rd installment must be equal to due amount</errorMessage>
+</ValidationRule>

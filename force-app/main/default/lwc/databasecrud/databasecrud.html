@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Datatable to perform CRUD operations" icon-name="standard:account" variant="base">
+        <div class="slds-align_absolute-center slds-m-around_medium">
+            <lightning-button label="create account " onclick={handlecreate} icon-name="utility:settings"
+                variant="brand">
+            </lightning-button>
+        </div>
+
+        <div style="height:300px;" class="slds-m-around_medium">
+            <lightning-datatable key-field="Id" data={data} columns={columns} onsave={handleSave}
+                draft-values={draftValues} hide-checkbox-column="true" onrowaction={handlerowaction}>
+
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>first_name_validation_form</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNUMBER(First_name__c)</errorConditionFormula>
+    <errorDisplayField>First_name__c</errorDisplayField>
+    <errorMessage>number is not allowed</errorMessage>
+</ValidationRule>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>select_bank__c</fullName>
+    <label>select bank</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>state bank of india</fullName>
+                <default>false</default>
+                <label>state bank of india</label>
+            </value>
+            <value>
+                <fullName>bank of india</fullName>
+                <default>false</default>
+                <label>bank of india</label>
+            </value>
+            <value>
+                <fullName>bank of baroda</fullName>
+                <default>false</default>
+                <label>bank of baroda</label>
+            </value>
+            <value>
+                <fullName>punjab national bank</fullName>
+                <default>false</default>
+                <label>punjab national bank</label>
+            </value>
+            <value>
+                <fullName>axis bank</fullName>
+                <default>false</default>
+                <label>axis bank</label>
+            </value>
+            <value>
+                <fullName>hdfc bank</fullName>
+                <default>false</default>
+                <label>hdfc bank</label>
+            </value>
+            <value>
+                <fullName>icici bank</fullName>
+                <default>false</default>
+                <label>icici bank</label>
+            </value>
+            <value>
+                <fullName>kotak mahindra bank</fullName>
+                <default>false</default>
+                <label>kotak mahindra bank</label>
+            </value>
+            <value>
+                <fullName>oriental bank of commerce</fullName>
+                <default>false</default>
+                <label>oriental bank of commerce</label>
+            </value>
+            <value>
+                <fullName>union bank</fullName>
+                <default>false</default>
+                <label>union bank</label>
+            </value>
+            <value>
+                <fullName>canara bank</fullName>
+                <default>false</default>
+                <label>canara bank</label>
+            </value>
+            <value>
+                <fullName>narmada satpura gramin bank</fullName>
+                <default>false</default>
+                <label>narmada satpura gramin bank</label>
+            </value>
+            <value>
+                <fullName>vindhya bank</fullName>
+                <default>false</default>
+                <label>vindhya bank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

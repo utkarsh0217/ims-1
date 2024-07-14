@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fee_payment_layout</fullName>
+    <fields>Student_Name__c</fields>
+    <fields>Total_Fees__c</fields>
+    <fields>X1st_installment_paid_amount__c</fields>
+    <fields>X2nd_installment_paid_amount__c</fields>
+    <fields>X3rd_installment_paid_amount__c</fields>
+    <fields>Total_due_amount__c</fields>
+    <label>fee payment layout</label>
+</CompactLayout>

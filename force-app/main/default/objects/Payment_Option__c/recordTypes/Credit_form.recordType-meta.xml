@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_form</fullName>
+    <active>true</active>
+    <label>Credit form</label>
+    <picklistValues>
+        <picklist>Bank_name__c</picklist>
+        <values>
+            <fullName>axis bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>bank of baroda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>bank of india</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>canara bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>hdfc bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>icici bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>kotak mahindra bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>punjab national bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>state bank of india</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>union bank</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>mode_of_payment__c</picklist>
+        <values>
+            <fullName>CARD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G PAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAYTM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHONE PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTGS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>email_validation_rule_2</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK( email__c )</errorConditionFormula>
+    <errorDisplayField>email__c</errorDisplayField>
+    <errorMessage>email cant be left blank</errorMessage>
+</ValidationRule>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>state__c</fullName>
+    <label>state</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>country__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>madhya pradesh</fullName>
+                <default>false</default>
+                <label>madhya pradesh</label>
+            </value>
+            <value>
+                <fullName>gujrat</fullName>
+                <default>false</default>
+                <label>gujrat</label>
+            </value>
+            <value>
+                <fullName>maharashtra</fullName>
+                <default>false</default>
+                <label>maharashtra</label>
+            </value>
+            <value>
+                <fullName>victoria</fullName>
+                <default>false</default>
+                <label>victoria</label>
+            </value>
+            <value>
+                <fullName>melbourne</fullName>
+                <default>false</default>
+                <label>melbourne</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>india</controllingFieldValue>
+            <valueName>madhya pradesh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>india</controllingFieldValue>
+            <valueName>gujrat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>india</controllingFieldValue>
+            <valueName>maharashtra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>australia</controllingFieldValue>
+            <valueName>victoria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>australia</controllingFieldValue>
+            <valueName>melbourne</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

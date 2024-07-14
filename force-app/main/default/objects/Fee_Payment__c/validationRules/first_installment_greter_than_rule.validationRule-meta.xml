@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>first_installment_greter_than_rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(X1st_installment_paid_amount__c  &gt;  Total_Fees__c, X1st_installment_paid_amount__c&lt;=0)</errorConditionFormula>
+    <errorDisplayField>X1st_installment_paid_amount__c</errorDisplayField>
+    <errorMessage>1st installment cannot be greater than total amount</errorMessage>
+</ValidationRule>

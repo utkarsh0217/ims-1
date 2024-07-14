@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>mobile_number_validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(NOT(ISNUMBER(mobile_number__c)), ISBLANK(mobile_number__c), LEN( mobile_number__c)&lt;&gt;10, VALUE( mobile_number__c )&lt;0 )</errorConditionFormula>
+    <errorDisplayField>mobile_number__c</errorDisplayField>
+    <errorMessage>it must be 10 digit number</errorMessage>
+</ValidationRule>

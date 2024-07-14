@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="combobox with data table" icon-name="standard:account" variant="base">
+        <div class="slds-m-around_medium">
+            <lightning-combobox
+              label="Accounts list "
+              value={value}
+              placeholder="select any account"
+              options={options}
+              onchange={handleChange} 
+                           
+            ></lightning-combobox>
+        </div>
+        </lightning-card>
+         <template if:true={cardvisible}>
+            <div class="slds-m-around_medium">
+            <lightning-card title ="related contact list" icon-name="standard:contact" variant="base">
+                <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}
+                hide-checkbox-column="true"
+                show-row-number-column
+              ></lightning-datatable>
+                
+              
+            </lightning-card>
+            
+            </div>
+        </template>  
+</template>

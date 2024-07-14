@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Identity_ID__c</fullName>
+    <label>Identity (ID)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aadhar card</fullName>
+                <default>false</default>
+                <label>Aadhar card</label>
+            </value>
+            <value>
+                <fullName>PAN Card</fullName>
+                <default>false</default>
+                <label>PAN Card</label>
+            </value>
+            <value>
+                <fullName>Voter ID</fullName>
+                <default>false</default>
+                <label>Voter ID</label>
+            </value>
+            <value>
+                <fullName>Driving Licence</fullName>
+                <default>false</default>
+                <label>Driving Licence</label>
+            </value>
+            <value>
+                <fullName>Passport</fullName>
+                <default>false</default>
+                <label>Passport</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

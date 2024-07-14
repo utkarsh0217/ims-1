@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>maximum_security_deposit__c</fullName>
+    <label>maximum security deposit</label>
+    <summarizedField>employe1__c.security_deposit__c</summarizedField>
+    <summaryForeignKey>employe1__c.department__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

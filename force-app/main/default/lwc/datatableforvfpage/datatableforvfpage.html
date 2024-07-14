@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Data table to show contact records imported from lwc" class="slds-m-around_medium" icon-name="standard:account" variant="base">
+        
+        <div class="slds-m-around_medium">
+            <lightning-datatable    
+            key-field="Id"
+            data={data}
+            columns={columns}
+            hide-checkbox-column="true"
+            show-row-number-column>
+            </lightning-datatable>
+                       
+          
+        </div>
+        
+    </lightning-card>
+    
+</template>

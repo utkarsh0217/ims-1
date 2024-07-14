@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Home Loan EMI Calculator" class="slds-align_absolute-center" icon-name="standard:budget_period" variant="base">
+       <div class="slds-m-around_medium">
+        <lightning-slider label="Loan Amount (in INR-₹)" step="1" min="100000" max="100000000" value={principal} onchange={handleChange1}>
+        </lightning-slider>
+        </div> 
+        
+        <div class="slds-m-around_medium">
+        <lightning-slider label="Intrest Rate (in %)" step="0.01" min="0" max="15" value={rate} onchange={handleChange2}>
+        </lightning-slider>
+         </div> 
+        <div class="slds-m-around_medium">
+        <lightning-slider label="Loan Term (in years)" step="1" min="1" max="30" value={time} onchange={handleChange3}>
+        </lightning-slider>
+         </div> 
+        <div class="slds-m-around_medium slds-align_absolute-center">
+        <lightning-button icon-name="utility:download" variant="brand" label="Calculate"  icon-position="right"
+            onclick={handlecalculate}>
+        </lightning-button>
+         </div> 
+
+        <div class="slds-m-around_medium" style="background-color: #3498db">
+          <p><strong>Total Amount (Loan+Intrest) : {totalamount} ₹ </strong></p>
+          <p><strong>Principal : {principal} ₹</strong> </p>
+          <p><strong>Monthly EMI : {emi} ₹</strong></p>
+          <p><strong>Intrest Payable : {totalintrest} ₹</strong></p>
+
+
+        </div>
+
+
+
+
+
+
+
+    </lightning-card>
+</template>
