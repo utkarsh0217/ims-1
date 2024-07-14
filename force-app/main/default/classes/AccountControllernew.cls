@@ -17,7 +17,7 @@ public with sharing class AccountControllernew {
         update recordToUpdate;
     }
 
-    // Method to delete accounts ----
+    // Method to delete accounts ----====++++
     @AuraEnabled
     public static void deleteAccounts(List<Id> recordIds) {
         List<Account> recordsToDelete = new List<Account>();
